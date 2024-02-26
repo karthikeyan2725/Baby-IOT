@@ -39,7 +39,7 @@ while(cap.isOpened()):
         boxedFrame = cv2.rectangle(boxedFrame, (x, y), (x + width, y + height), color, thickness=2)
 
     cv2.imshow('output', boxedFrame)
-    if cv2.waitKey(20) & 0xFF == ord('q'): #ord('q') must be 113
+    if cv2.waitKey(20) & 0xFF == ord('q'): #ord('q') must be 113 not -113
         break
 
 cap.release()
